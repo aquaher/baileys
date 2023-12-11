@@ -1,0 +1,46 @@
+{
+  "name": "a-bot",
+  "version": "1.0.0",
+  "description": "Bot whatsapp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.ts",
+    "tsc": "tsc",
+    "build": "tsc",
+    "start": "node app.js",
+    "postinstall": "tsc",
+    "watch-node": "nodemon app.js",
+    "watch-ts": "tsc -w"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "auth/*",
+      "store/*",
+      "baileys_store_multi.json",
+      "auth_info_multi.json",
+      "baileys_store.json",
+      "baileys_store_multi.json"
+    ]
+  },
+  "author": "Andrés",
+  "license": "ISC",
+  "devDependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.18",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@adiwajshing/keyed-db": "^0.2.4",
+    "@whiskeysockets/baileys": "^6.3.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "languagedetect": "^2.0.0",
+    "pino": "^8.1.0",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.5.1"
+  }
+}

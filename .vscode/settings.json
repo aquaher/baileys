@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c3e9bfd3-b964-4a20-9844-07f6571a98cc/resourceGroups/chat-bot/providers/Microsoft.Web/sites/a-chat-bot",
+    "appService.deploySubpath": ".",
+    "github-enterprise.uri": "https://dev.azure.com"
+}

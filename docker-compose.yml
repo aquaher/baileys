@@ -1,0 +1,20 @@
+version: '3'
+services:
+  my-node-app:
+    container_name: baileys
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "53007:3000"
+    environment:
+      - TZ=America/Guayaquil
+    volumes:
+      - .:/app
+    restart: always
+    networks:
+      - back-app-sysher_default
+
+networks:
+  back-app-sysher_default:
+    external: true

@@ -1,0 +1,3 @@
+{
+  "ignore": ["auth/*","store/*","baileys_store_multi.json", "auth_info_multi.json", "baileys_store.json", "baileys_store_multi.json"]
+}
